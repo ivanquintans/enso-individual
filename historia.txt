@@ -3,7 +3,6 @@ git status
 git add .
 git status
 git commit -m "Inicializada la estructura principal del repositorio, añadidos historia.txt, y las carpetas Procesos/ y Proyectos/"
-git push
 git tag -a R1 -m "Versión R1"
 git branch "Mejoras"
 git checkout "Mejoras"
@@ -18,7 +17,21 @@ git merge Mejoras
 git branch -d Mejoras
 git add .
 git commit -m "Eliminado archivo  Procesos/ControlDeCambios/Anexo_3.1.pdf"
-git push
 git tag -a R2 -m "Versión R2"
+git add .
+git commit -m "Actualizada a la nueva version el fichero Procesos/ControlDeCambios/DP_ControldeCambios_Grupo5.pdf"
+git reset --soft HEAD~1
+git add .
+git commit -m "Actualizada a la nueva version el fichero Procesos/ControlDeCambios/DP_ControldeCambios_Grupo5.pdf y actualizada la carpeta plantillas"
+git tag -a R3 -m "Versión R3"
+git push origin main --tags
+git pull
+git diff
+git add .
+git commit -m "Archivo historia actualizado"
+git push
+
+
+
 
 
