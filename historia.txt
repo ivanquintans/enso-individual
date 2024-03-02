@@ -7,3 +7,9 @@ git push
 git tag -a R1 -m "Versión R1"
 git branch "Mejoras"
 git checkout "Mejoras"
+git status
+git add Procesos/ControlDeCambios/plantillas/
+git add .
+git commit -m "Cambiado documento DP_ControldeCambios (introducción de mejoras y correciones sobre este)"
+git add .
+git commit -m "Fichero historia actualizado"
