@@ -13,3 +13,12 @@ git add .
 git commit -m "Cambiado documento DP_ControldeCambios (introducción de mejoras y correciones sobre este)"
 git add .
 git commit -m "Fichero historia actualizado"
+git checkout main
+git merge Mejoras
+git branch -d Mejoras
+git add .
+git commit -m "Eliminado archivo  Procesos/ControlDeCambios/Anexo_3.1.pdf"
+git push
+git tag -a R2 -m "Versión R2"
+
+
