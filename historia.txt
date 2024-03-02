@@ -4,3 +4,6 @@ git add .
 git status
 git commit -m "Inicializada la estructura principal del repositorio, añadidos historia.txt, y las carpetas Procesos/ y Proyectos/"
 git push
+git tag -a R1 -m "Versión R1"
+git branch "Mejoras"
+git checkout "Mejoras"
